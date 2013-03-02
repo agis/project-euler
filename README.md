@@ -1,1 +1,1 @@
-Solving problems from (Project Euler)[http://projecteuler.net] in Erlang :love:
+Solving problems from [Project Euler](http://projecteuler.net) in ![Agner Krarup Erlang](erlang.jpg).
