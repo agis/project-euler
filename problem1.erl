@@ -1,6 +1,8 @@
 -module(problem1).
 -export([answer/0]).
 
+% lists:sum & lists:seq are re-implemented here for the shake of ...
+
 answer() -> sum(multiples(seq(1, 999))).
 
 seq(Max, Max) -> [Max];
