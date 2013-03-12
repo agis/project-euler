@@ -1,6 +1,8 @@
 -module(problem2).
 -export([answer/0]).
 
+% lists:sum is re-implemented for the shake of ...
+
 answer() -> sum(even(fib([1,0]))).
 
 fib([H,B|T]) when H+B =< 4000000 -> fib([H+B,H,B|T]);
