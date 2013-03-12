@@ -1,8 +1,7 @@
 -module(problem6).
--compile(answer).
-
-% Using sum, seq & map BIFs
+-export([answer/0]).
+-import(lists, [seq/2, sum/1, map/2]).
 
 answer() ->
-  lists:sum(lists:seq(1, 100)) * lists:sum(lists:seq(1, 100)) -
-  lists:sum(lists:map(fun(X) -> X*X end, lists:seq(1, 100))).
+  sum(seq(1, 100)) * sum(seq(1, 100)) -
+  sum(map(fun(X) -> X*X end, seq(1, 100))).
