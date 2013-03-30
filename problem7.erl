@@ -1,9 +1,9 @@
 -module(problem7).
 -export([answer/0]).
 
-% Todo: optimize this to use Slieve of Atkins
+% Optimization: Slieve of Atkins/Slieve of Erratosthenes
 
-answer() -> get_primes(1, 10001, []).
+answer() -> lists:max(get_primes(1, 10001, [])).
 
 get_primes(_X, N, Acc) when length(Acc) =:= N -> Acc;
 get_primes(X, N, Acc) ->
