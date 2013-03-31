@@ -1,7 +1,7 @@
 -module(problem7).
 -export([answer/0]).
 
-% Optimization: Slieve of Atkins/Slieve of Erratosthenes
+% Optimization: Sieve of Atkins/Slieve of Erratosthenes
 
 answer() -> lists:max(get_primes(1, 10001, [])).
 
