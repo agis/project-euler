@@ -1,7 +1,7 @@
 -module(problem3).
 -export([answer/0]).
 
-% Improve performance by using the Slieve of Atkins
+% Improve performance by using the Sieve of Atkin or Erratosthenes
 
 answer() -> lists:max(prime_factors(600851475143)).
 
