@@ -1,8 +1,6 @@
 -module(problem3).
 -export([answer/0]).
 
-% Improve performance by using the Sieve of Atkin or Erratosthenes
-
 answer() -> lists:max(prime_factors(600851475143)).
 
 prime_factors(X) -> [Z || Z <- factors(X), is_prime(Z)].
