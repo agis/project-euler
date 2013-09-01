@@ -30,8 +30,7 @@ func main() {
 
 	for n = 5; float64(n) <= nsqrt; n++ {
 		if is_prime[n] {
-			x = n*n
-			for y = x; y < N; y += x {
+			for y = n*n; y < N; y += n*n {
 				is_prime[y] = false
 			}
 		}
