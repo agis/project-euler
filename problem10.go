@@ -46,5 +46,11 @@ func main() {
 		}
 	}
 
-	fmt.Println(primes)
+	sum := 0
+
+	for _, v := range primes {
+		sum += v
+	}
+
+	fmt.Println(sum)
 }
